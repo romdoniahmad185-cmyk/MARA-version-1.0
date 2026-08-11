@@ -16,6 +16,19 @@
     <script>
         window.location.href = "looc-screen.html";
     </script>
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(() => {
+                console.log("MARA OS Service Worker aktif");
+            })
+            .catch(error => {
+                console.error("Service Worker gagal:", error);
+            });
+    });
+}
+</script>
 
 </body>
 </html>
