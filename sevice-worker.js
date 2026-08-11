@@ -8,8 +8,8 @@ const FILES_TO_CACHE = [
     "./app-drawer.html",
     "./mara-os1png.png",
     "./mara-os2png.png",
-    "./walpaperhp.jpg",
     "./wallpaper1.png",
+    "./walpaperhp.png",
     "./manifest.json"
 ];
 self.addEventListener("install", event => {
