@@ -1,26 +1,16 @@
 {
   "name": "MARA OS",
   "short_name": "MARA",
-  "description": "MARA OS",
-  "start_url": "./lock-screen.html",
+  "description": "MARA OS - Sistem Produktivitas dan Pendamping Digital",
+  "lang": "id-ID",
+  "start_url": "./",
   "scope": "./",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0b0d12",
-  "theme_color": "#0b0d12",
-  "lang": "id",
-  "icons": [
-    {
-      "src": "./icon-svg/mara-192.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
-    {
-      "src": "./icon-svg/mara-512.svg",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "categories": [
+    "productivity",
+    "utilities"
   ]
 }
