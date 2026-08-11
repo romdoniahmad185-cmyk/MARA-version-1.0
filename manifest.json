@@ -1,21 +1,25 @@
 {
   "name": "MARA OS",
   "short_name": "MARA",
-  "description": "MARA OS - Sistem aplikasi berbasis web",
+  "description": "MARA OS - Mobile Application Operating System",
+  "lang": "id-ID",
+  "dir": "ltr",
+
   "start_url": "./index.html",
   "scope": "./",
-  "display": "standalone",
+
+  "display": "fullscreen",
   "orientation": "portrait",
+
   "background_color": "#111827",
   "theme_color": "#111827",
-  "lang": "id",
-  "dir": "ltr",
+
   "icons": [
-  {
-    "src": "./mara-os2.svg",
-    "sizes": "512x512",
-    "type": "image/svg+xml",
-    "purpose": "any maskable"
-  }
-]
- }
+    {
+      "src": "./mara-os2png.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
