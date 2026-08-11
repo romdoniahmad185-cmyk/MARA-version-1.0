@@ -3,9 +3,15 @@ const CACHE_NAME = "mara-os-v1";
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
+    "./looc-screen.html",
+    "./home-screen.html",
+    "./app-drawer.html",
+    "./mara-os1png.png",
+    "./mara-os2png.png",
+    "./walpaperhp.jpg",
+    "./wallpaper1.png",
     "./manifest.json"
 ];
-
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
