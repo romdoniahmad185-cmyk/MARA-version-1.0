@@ -1,16 +1,21 @@
 {
   "name": "MARA OS",
   "short_name": "MARA",
-  "description": "MARA OS - Sistem Produktivitas dan Pendamping Digital",
-  "lang": "id-ID",
-  "start_url": "./",
+  "description": "MARA OS - Sistem aplikasi berbasis web",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#111827",
   "theme_color": "#111827",
-  "categories": [
-    "productivity",
-    "utilities"
+  "lang": "id",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./mara-os2.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
   ]
 }
