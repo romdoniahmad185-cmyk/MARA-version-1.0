@@ -1,9 +1,9 @@
 const CACHE_NAME = "mara-os-v0.1";
 
 const FILES_TO_CACHE = [
-  "./lock-screen.html",
+  "./looc-screen.html",
   "./home.html",
-  "./rama.html",
+  "./app-drawer.html",
   "./manifest.json"
 ];
 
