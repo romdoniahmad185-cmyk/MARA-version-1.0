@@ -10,13 +10,13 @@
   "theme_color": "#111111",
   "icons": [
     {
-      "src": "mara-os1png.png",
+      "src": "./mara-os1png.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "mara-os2png.png",
+      "src": "./mara-os2png.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
