@@ -12,13 +12,21 @@ const FILES_TO_CACHE = [
     "./walpaperhp.png",
     "./manifest.json"
 ];
+
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => cache.addAll(FILES_TO_CACHE))
+            .then(cache => {
+                return cache.addAll(FILES_TO_CACHE);
+            })
+            .then(() => {
+                return self.skipWaiting();
+            })
+            .catch(error => {
+                console.error("MARA OS cache gagal:", error);
+                throw error;
+            })
     );
-
-    self.skipWaiting();
 });
 
 self.addEventListener("activate", event => {
@@ -29,8 +37,7 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
     event.respondWith(
-        fetch(event.request).catch(() => {
-            return caches.match(event.request);
-        })
+        fetch(event.request)
+            .catch(() => caches.match(event.request))
     );
 });
