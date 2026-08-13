@@ -3,7 +3,6 @@ const CACHE_NAME = "mara-os-v1";
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
-    "./looc-screen.html",
     "./home-screen.html",
     "./app-drawer.html",
     "./mara-os1png.png",
