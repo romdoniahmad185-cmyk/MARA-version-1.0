@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="./manifest.json">
 <meta name="theme-color" content="#000000">
 
 <title>MARA OS — Lock Screen</title>
@@ -1554,6 +1555,33 @@ document.addEventListener(
 );
 
 </script>
+<script>
+if ("serviceWorker" in navigator) {
 
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker
+            .register("./service-worker.js")
+            .then(registration => {
+
+                console.log(
+                    "Creator Viewer Service Worker aktif:",
+                    registration.scope
+                );
+
+            })
+            .catch(error => {
+
+                console.error(
+                    "Creator Viewer Service Worker gagal:",
+                    error
+                );
+
+            });
+
+    });
+
+}
+</script>
 </body>
 </html>
