@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>MARA OS</title>
 
-    <link rel="manifest" href="./manifest.json">
-<meta name="theme-color" content="#111827">
+    <link
+        rel="manifest"
+        href="./manifest.json"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #111827;
+        }
+
+        #maraFrame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <script>
-        window.location.href = "looc-screen.html";
-    </script>
+    <iframe
+        id="maraFrame"
+        src="./looc-screen.html"
+        title="MARA OS"
+        allow="fullscreen"
+    ></iframe>
+
+
 <script>
+
 if ("serviceWorker" in navigator) {
+
     window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./service-worker.js")
-            .then(() => {
-                console.log("MARA OS Service Worker aktif");
+
+        navigator.serviceWorker
+            .register("./service-worker.js")
+            .then(registration => {
+
+                console.log(
+                    "MARA OS Service Worker aktif:",
+                    registration.scope
+                );
+
             })
             .catch(error => {
-                console.error("Service Worker gagal:", error);
+
+                console.error(
+                    "Service Worker gagal:",
+                    error
+                );
+
             });
+
     });
+
 }
+
 </script>
 
 </body>
+
 </html>
