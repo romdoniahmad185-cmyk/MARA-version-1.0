@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link rel="manifest" href="./manifest.json">
-<meta name="theme-color" content="#0b0d12">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#000000">
@@ -1556,18 +1554,6 @@ document.addEventListener(
 );
 
 </script>
-<script>
-if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./service-worker.js")
-            .then(() => {
-                console.log("MARA OS Service Worker aktif");
-            })
-            .catch(error => {
-                console.error("Service Worker gagal:", error);
-            });
-    });
-}
-</script>
+
 </body>
 </html>
