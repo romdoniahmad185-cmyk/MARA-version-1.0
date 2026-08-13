@@ -4,7 +4,7 @@
   "description": "MARA OS - Sistem aplikasi MARA",
   "start_url": "./",
   "scope": "./",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "background_color": "#111111",
   "theme_color": "#111111",
